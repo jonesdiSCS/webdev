@@ -1,0 +1,89 @@
+        body {
+            font-size: 35pt;
+            font-family: sans-serif;
+        }
+        .header {
+            background:#075698; /* default background for browsers without gradient support */
+                /* css3 */
+                background:-webkit-gradient(linear, 0 0, 0 100%, from(#2e88c4), to(#075698));
+                background:-moz-linear-gradient(#2e88c4, #075698);
+                background:-o-linear-gradient(#2e88c4, #075698);
+            background:linear-gradient(#2e88c4, #075698);
+                -webkit-border-radius:10px;
+                -moz-border-radius:10px;
+            border-radius:10px;
+            color:#fff;
+            padding: 10;
+            top: 0;
+            margin: 10;
+        }
+        .response {
+            position: relative;
+            padding:15px;
+            margin:1em 0 2em;
+            color:#fff;
+            background:#075698; /* default background for browsers without gradient support */
+                /* css3 */
+                background:-webkit-gradient(linear, 0 0, 0 100%, from(#2e88c4), to(#075698));
+                background:-moz-linear-gradient(#2e88c4, #075698);
+                background:-o-linear-gradient(#2e88c4, #075698);
+            background:linear-gradient(#2e88c4, #075698);
+                -webkit-border-radius:10px;
+                -moz-border-radius:10px;
+            border-radius:10px;
+          
+        }
+        .response.right {
+            text-align: right;
+            margin-right:50px;
+            margin-left: 35%;
+        }
+        .response.left {
+            margin-left:50px;
+            margin-right:35%;
+        }
+
+        .response.right:after {
+            position: absolute;
+            top:16px;
+            right:-50px; /* value = - border-left-width - border-right-width */
+            bottom:auto;
+            content: url(http://res.cloudinary.com/dijital-technologies/image/upload/c_scale,w_50/v1498578590/icons/Users-User-icon.png);
+        
+        }
+        .response.left:after {
+            position: absolute;
+            top:16px;
+            left:-50px; /* value = - border-left-width - border-right-width */
+            bottom:auto;
+            content: url(http://res.cloudinary.com/dijital-technologies/image/upload/c_scale,w_50/v1498578590/icons/Gnome-stock_person_bot.svg.png);
+        }
+
+        #conversation {
+            overflow: scroll;
+            max-height: 70%;
+            width: 90%;
+            margin: auto;
+        }
+
+        #messageBar {
+            position: absolute;
+            bottom: 0;
+            margin-left: 50px;
+            margin-right: 50px;
+            width: 90%;
+            font-size: 1.1em;
+        }
+        #message {
+            width: 80%;
+            height: 15%;
+            font-size: inherit;
+        }
+        #send {
+            position: relative;
+            bottom: 50;
+            width: 15%;
+            height: 30%;
+            margin: auto;
+            font-size: inherit;
+        }
